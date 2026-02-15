@@ -1,0 +1,17 @@
+# Visual Studio junk
+.vs/
+x64/
+Debug/
+Release/
+*.user
+*.aps
+*.opendb
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.suo
+*.sln
+
+# Nsight Systems junk
+*.nsys-rep
+*.sqlite
