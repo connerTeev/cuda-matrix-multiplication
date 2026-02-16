@@ -1,23 +1,48 @@
-# GPU-Accelerated Matrix Multiplication
+# GPU-Accelerated Matrix Multiplication (CUDA)
 
-Implementing matrix multiplication in CUDA to explore GPU performance optimization.
+A simple CUDA project exploring GPU acceleration and performance optimization using matrix multiplication.
 
-## Goals
-Compare performance across three approaches:
-1. CPU baseline (single-threaded)
-2. Naive GPU (basic parallelization)
-3. Optimized GPU (shared memory tiling)
-
-## Current Status
-- ✅ CPU baseline comparison (planned)
-- ✅ Naive CUDA implementation
-- 🚧 Tiled/shared memory optimization (in progress)
-
-## Tech Stack
-- CUDA 13.1
-- C++
-- NVIDIA RTX 5080
+This project compares CPU and GPU implementations to understand how parallelization and memory optimization improve performance.
 
 ---
 
-*Work in progress - learning GPU programming fundamentals*
+## What This Project Does
+
+Implements matrix multiplication in three ways:
+
+1. **CPU (Single-threaded)** – Baseline implementation  
+2. **Naive CUDA** – One thread per output element  
+3. **Tiled CUDA (Shared Memory)** – Optimized version using shared memory (in progress)
+
+The goal is to measure speedup and understand how GPU architecture impacts performance.
+
+---
+
+## Why Matrix Multiplication?
+
+Matrix multiplication is widely used in:
+- Machine learning
+- Scientific computing
+- Computer graphics
+
+It’s also a great way to learn:
+- CUDA thread hierarchy (grids & blocks)
+- Global vs shared memory
+- Memory access patterns
+- Performance benchmarking
+
+---
+
+## Tech Stack
+
+- C++
+- CUDA 13.1
+- NVIDIA RTX 5080
+- nvcc compiler
+- Nsight Systems
+
+## To Do
+- Complete tiled optimization
+- Add benchmark results table
+
+---
